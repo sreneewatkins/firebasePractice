@@ -106,8 +106,9 @@
       })
 
       dbRef.update({
-        className: 'JS Application Development',
-        students: 15
+        className: 'JS App Development',
+        students: 15,
+        message: "HOLA"
       });
 
       var teacher = dbRef.child('teacher');
@@ -116,7 +117,7 @@
 
       teacher.set({
         class: 'JS Applications',
-          name: 'Shane',
+          name: 'Shannon',
           computer: {
             type: 'mac',
             size: '15 inch'
@@ -124,7 +125,7 @@
       });
 
       var ShanesComputer = dbRef.child('teacher/computer');
-      
+
 
     </script>
   </body>
